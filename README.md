@@ -29,7 +29,7 @@ Depois de ter realizado as instalações execute os comandos:
 ```
 npm install
 grunt build
-npm start
+npm run start
 ```
 
 Após realizar as edições execute novamente o `grunt build` e o `npm start`
