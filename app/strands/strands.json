@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Keratin",
+    "structure": "AAA",
+    "prob": 0,
+    "rate": 0
+  },
+  {
+    "name": "Myosin",
+    "structure": "GGG",
+    "prob": 0,
+    "rate": 0
+  },
+  {
+    "name": "Collagen",
+    "structure": "TTT",
+    "prob": 0,
+    "rate": 0
+  },
+  {
+    "name": "Elastin",
+    "structure": "CCC",
+    "prob": 0,
+    "rate": 0
+  }
+]
