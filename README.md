@@ -14,7 +14,9 @@ O objetivo do teste é verificar a capacidade do candidato de resolver problemas
 
 O código tem muito espaço para melhorias, como criação de componentes, arquitetura, etc. Fique a vontade para realizar melhorias.
 
-Inicialização:
+### Inicialização:
+
+É necessário instalar o node `versão 12` e o grunt-cli `versão 1.4.3`. Após as instalações, execute os comandos:
 
 ```
 npm install
