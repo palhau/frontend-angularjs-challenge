@@ -16,7 +16,15 @@ O código tem muito espaço para melhorias, como criação de componentes, arqui
 
 ### Inicialização:
 
-É necessário instalar o node `versão 12` e o grunt-cli `versão 1.4.3`. Após as instalações, execute os comandos:
+É necessário instalar o `node versão 12` e o `grunt-cli versão 1.4.3`. <br/>
+Recomendamos utilizar o `nvm` para a instalação do node. <br/>
+Para instalar o `grunt-cli` execute o comando
+
+```
+npm install -g grunt-cli
+```
+
+Depois de ter realizado as instalações execute os comandos:
 
 ```
 npm install
