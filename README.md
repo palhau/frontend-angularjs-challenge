@@ -31,7 +31,9 @@ npm install
 npm run start
 ```
 
-Após realizar as edições execute novamente o `npm start`
+Após realizar as edições execute novamente o `npm start` (One Time Build)
+
+Para ambiente de desenvolvimento com live reload execute:  `npm run dev`
 
 **FEATURES**
 

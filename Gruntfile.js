@@ -42,11 +42,20 @@ module.exports = function(grunt) {
 				'build/index.html': ['app/index.html']
 			}
 		}
-	}
+	},
+
+	watch: {
+    files: ['**/*'],
+    tasks: ['concat', 'uglify', 'cssmin', 'processhtml'],
+		options: {
+			livereload: true,
+		},
+  },
   })
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-processhtml');
 grunt.registerTask('build', ['concat','uglify', 'cssmin', 'processhtml']);
 };
