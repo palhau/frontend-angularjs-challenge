@@ -28,11 +28,10 @@ Depois de ter realizado as instalações execute os comandos:
 
 ```
 npm install
-grunt build
 npm run start
 ```
 
-Após realizar as edições execute novamente o `grunt build` e o `npm start`
+Após realizar as edições execute novamente o `npm start`
 
 **FEATURES**
 

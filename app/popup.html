@@ -24,23 +24,21 @@
     <br />
 
     <input type="hidden" ng-model="global.editSeq.rate" value="0" />
-    <input
+    <button
       class="b"
       type="button"
       name="ok"
       id="ok"
-      value="OK"
       ng-click="editSequence(global.id) && dialogClose()"
-    />
-    <input
+    >OK</button>
+    <button
       class="b"
       type="button"
       name="delete"
       id="delete"
-      value="DELETE"
       ng-click="remove(global.id);dialogClose()"
       ng-disabled="global.deleteDisable"
-    />
+    >DELETE</button>
 
     <br />
 

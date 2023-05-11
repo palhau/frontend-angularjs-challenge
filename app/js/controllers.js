@@ -15,28 +15,12 @@ var MinIONApp = angular.module("MinIONApp", [
 MinIONApp.controller("SequenceListCtrl", [
   "$scope",
   "Dialog",
-  "$http",
-  "DataChunk",
-  "$interval",
-  "transcriberFilter",
-  "SequenceMatcher",
-  "$window",
-  "$filter",
-  "Color",
   "SequenceEditor",
   "BackendConnection",
   "DataCollection",
   function (
     $scope,
     Dialog,
-    $http,
-    DataChunk,
-    $interval,
-    transcriberFilter,
-    SequenceMatcher,
-    $window,
-    $filter,
-    Color,
     SequenceEditor,
     BackendConnection,
     DataCollection
@@ -103,8 +87,8 @@ MinIONApp.controller("SequenceListCtrl", [
       return Dialog.close($scope.global);
     };
 
-    $scope.editSequence = function () {
-      alert("Implementar edição");
+    $scope.editSequence = function (editId) {
+      return SequenceEditor.editSequence(editId, $scope.global.editSeq, $scope.sequences);
     };
 
     $scope.remove = function (removeId) {

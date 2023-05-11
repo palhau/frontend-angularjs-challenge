@@ -17,11 +17,10 @@ main {
 	margin-right:auto;
 	border: solid 3px black;
 	width:80%;
-	//padding:2em;
 	padding:2%;
 	vertical-align:middle;
 }
-input.b {
+button.b {
 	background:rgba(255,255,255,.0);
 	border:white 1px solid;
 	border-radius:20px;
@@ -60,7 +59,6 @@ input.b {
 	font-size:1.5em;
 }
 .mainContainer {
-	//border: 2px solid black;
 	min-height:15em;
 	overflow:hidden;
 	text-align:center;
@@ -102,7 +100,6 @@ ul {
 	background:rgba(255,255,255,0);
 	border:solid 1px white;
 	transition: background .2s;
-	vertical-align:middle;
 	padding:.5em;
 }
 .tbody > div {
@@ -114,8 +111,7 @@ ul {
 	width:55%;
 }
 .paddingHack {
-	display:block:
-	width:13%;
+	display:block;
 	position:relative;
 	height:0;
 	padding-top:13%;
@@ -140,10 +136,13 @@ svg.rect {
 	cursor:pointer;
 	transition: background .2s;
 }
-.plus:hover,input.b:hover, .tbody:hover  {
+.plus:hover,button.b:disabled , .tbody:hover  {
 	background:rgba(255,255,255,.5);
+	border:outset 1px gray;
+	cursor: default;
+	color:rgba(0,0,0,.3);
 }
-.plus:active,input.b:active, .tbody:active  {
+.plus:active,button.b:active, .tbody:active  {
 	background:rgba(255,255,255,1);
 }
 div.dialogBackground {

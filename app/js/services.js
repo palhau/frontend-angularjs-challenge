@@ -12,6 +12,13 @@ var dataCollectionService = angular.module("dataCollectionService", [
 ]);
 var dialogService = angular.module("dialogService", ["ngDialog"]);
 
+var emptyEditSeq = {
+  "name": "",
+  "structure": "",
+  "prob": 0,
+  "rate": 0
+}
+
 dataCollectionService.factory("DataCollection", [
   "$interval",
   "transcriberFilter",
@@ -173,16 +180,14 @@ dialogService.factory("Dialog", [
     return {
       openedDialog: "",
       open: function (seqId, global, sequences, scope) {
+        var hasSeqId = seqId !== undefined ? true : false;
+
         global.seqError = false;
         global.dialogOpen = true;
 
-        if (seqId) {
-          global.id = seqId;
-          global.editSeq = angular.copy(sequences[seqId]);
-          global.deleteDisable = false;
-        } else {
-          return alert("Implementar Adição");
-        }
+        global.id = hasSeqId ? seqId : sequences.length;
+        global.editSeq = hasSeqId ? angular.copy(sequences[seqId]) : emptyEditSeq;
+        global.deleteDisable = hasSeqId ? false : true;
 
         this.openedDialog = ngDialog.open({
           template: "popup.html",

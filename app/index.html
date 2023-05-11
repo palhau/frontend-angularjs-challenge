@@ -60,39 +60,39 @@
       </div>
 
       <div class="buttons">
-        <input
+        <button
           class="b"
           type="button"
           name="save"
-          value="SAVE REPORT"
+          ng-model="button"
           ng-click="save()"
-        />
-        <input
+        >SAVE REPORT</button>
+        <button
           class="b"
           type="button"
           id="clear"
           name="clear"
-          value="CLEAR"
+          ng-model="button"
           ng-click="clear()"
-        />
-        <input
+        >CLEAR</button>
+        <button
           class="b"
           type="button"
           id="start"
           name="start"
-          value="START"
+          ng-model="button"
           ng-disabled="global.collection"
           ng-click="startDataCollection()"
-        />
-        <input
+        >START</button>
+        <button
           class="b"
           type="button"
           id="stop"
           name="stop"
-          value="STOP"
+          ng-model="button"
           ng-disabled="!global.collection"
           ng-click="stopDataCollection()"
-        />
+        >STOP</button>
       </div>
     </main>
 
